@@ -1,0 +1,14 @@
+Obbiettivi alphabot 2021-10-27
+
+1) sistemare i metodi						V
+2) rallentare la sterzata (sinistra e destra)			V
+3) accellerazione (da partenza)					(revisionare)
+4) diferenziare stop da rallentamento (fare 2 metodi)		
+
+Obbiettivi alphabot 2021-11-03
+1) aggiungere un tempo alle funzioni di movimento		V
+2) inserire un db nel bot_server
+	2a) nel db inserire tabella con : 			V
+		- colonna 1: il movimento
+		- colonna 2: sequenza del movimento
+	2b) connettere il db con il server

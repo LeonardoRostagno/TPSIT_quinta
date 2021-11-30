@@ -1,0 +1,34 @@
+CLIENT UDP --> client.py
+SERVER UDP --> server.py
+
+ogni client ha un nickname univoco
+
+il server ha un IP address
+i client hanno un IP address
+
+il server deve conoscere tutti gli utenti
+sul server deve essere memorizzata una tabellina:
+
+	NICKNAME	|	IPCLIENT
+	--------------------------------
+	Mario Rossi	| 192.168.10.20
+			|
+			|
+
+dobbiamo usare un dizionario per la tabellina
+
+Quando il client si collega, manda un mex Hello al sever contentente il nickname 
+e quindi il server se lo salva
+
+messaggio di Hello : f"Nickname:{nick_name}"
+
+
+---------------------------------------------------------------------------------------
+Dopo che un client ha joinnato, il server manda un ok al client, quindi il client entra
+nel while True
+
+I messaggi nella chat che arrivano al server saranno : 
+f"Sender:{nick_mittente},Reciver:{nick_reciver},{messaggio}"
+
+il server deve estrarre il mittente, il ricevente e il testo, 
+quindi invia al ricevente il messaggio 
