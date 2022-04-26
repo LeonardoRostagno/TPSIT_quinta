@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Flask Intro - login page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Please login</h1>
+      <br>
+      <form action="" method="post">
+        <div class="row">
+          <div class="col-25">
+            <label for="user">USERNAME</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id = "user" placeholder="Username" name="username" value="{{ request.form.username }}">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="pass">PASSWORD</label>
+          </div>
+          <div class="col-75">
+            <input type="password" id = "pass" placeholder="Password" name="password" value="{{ request.form.password }}">
+          </div>
+        </div>
+        <input class="btn btn-default" type="submit" value="Login">
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </div>
+  </body>
+</html>
